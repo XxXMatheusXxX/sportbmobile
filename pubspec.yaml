@@ -1,0 +1,28 @@
+name: sportzone
+description: "Um projeto Flutter para gerenciamento de torneios esportivos."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/torneio1.jpg
+    - assets/torneio2.jpg
+    - assets/torneio3.jpg
+    - assets/torneio4.jpg
+    - assets/logo.png
