@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sportzone/basquete.dart';
 import 'package:sportzone/futsal.dart';
 import 'package:sportzone/tenis_mesa.dart';
-import 'menu.dart';
+import 'menu.dart';  // Certifique-se que o caminho está correto
 import 'principal.dart';
 import 'atletismo.dart';
 
@@ -20,13 +20,12 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => MenuPage(),
-        '/cadastro': (context) => Principal(),
+        '/': (context) => MenuPage(), // Certifique-se que MenuPage está importado corretamente
+        '/cadastro': (context) => Principal(),  // Principal deve funcionar aqui
         '/atletismo': (context) => AtletismoPage(),
         '/tenis_mesa': (context) => Tenis_MesaPage(),
         '/basquete': (context) => BasquetePage(),
         '/futsal': (context) => FutsalPage(),
-
       },
     );
   }

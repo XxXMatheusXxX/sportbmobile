@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';  // Certifique-se que o caminho e a importação estão corretos
 
 class Principal extends StatefulWidget {
   @override
@@ -32,7 +32,7 @@ class _PrincipalState extends State<Principal> {
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,  // Makes child widgets stretch to fill the card width
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       Center(child: Image.asset('assets/logo.png', height: 250)),
                       SizedBox(height: 20),
@@ -86,10 +86,10 @@ class _PrincipalState extends State<Principal> {
                 ),
               ),
               SizedBox(height: 20),
-              // Button outside the card
               ElevatedButton(
                 onPressed: () {
                   // Lógica para inscrição
+                  Navigator.pushNamed(context, '/');
                 },
                 style: ElevatedButton.styleFrom(
                   primary: Colors.orange,
@@ -100,7 +100,7 @@ class _PrincipalState extends State<Principal> {
                 ),
                 child: Text(
                   'Seguinte',
-                  style: TextStyle(fontSize: 18,color: Colors.white),
+                  style: TextStyle(fontSize: 18, color: Colors.white),
                 ),
               ),
               SizedBox(height: 20),

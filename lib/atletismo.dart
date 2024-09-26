@@ -90,7 +90,7 @@ class AtletismoPage extends StatelessWidget {
                     SizedBox(height: 5),
                     GestureDetector(
                       onTap: () {
-
+                        // Ação para alterar método de pagamento
                       },
                       child: Text(
                         'Alterar método de pagamento',
@@ -108,7 +108,8 @@ class AtletismoPage extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.9,
                 child: ElevatedButton(
                   onPressed: () {
-
+                    // Redireciona para o menu ao se inscrever
+                    Navigator.pushNamed(context, '/');
                   },
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.all(16.0),
